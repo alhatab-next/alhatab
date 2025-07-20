@@ -56,11 +56,11 @@ export default function Home() {
               ),
               image: (
                 <Image
-                  className="w-auto h-full max-h-48 mx-auto"
+                  className="w-auto h-full max-h-32 mx-auto"
                   src={item.image}
                   alt={item.name}
-                  width={192}
-                  height={192}
+                  width={128}
+                  height={128}
                 />
               ),
             }));
@@ -74,7 +74,10 @@ export default function Home() {
               <Table aria-label="Items">
                 <TableHeader columns={columns}>
                   {(column) => (
-                    <TableColumn className="text-center" key={column.key}>
+                    <TableColumn
+                      className="text-center text-neutral-700"
+                      key={column.key}
+                    >
                       {column.label}
                     </TableColumn>
                   )}

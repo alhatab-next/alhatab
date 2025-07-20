@@ -4,7 +4,7 @@
 declare const messages: {
   "Metadata": {
     "title": "Al Hatab",
-    "description": "Al Hatab"
+    "description": "We must choose our daily food carefully, which is why Al-Hatab Bakeries offers you fresh baked goods - from traditional local bread to baguettes, burger buns, tortillas, and soft toast - to make your daily meals more enjoyable. If you prefer low-calorie products, ask about our special selection of reduced-calorie bread."
   },
 
   "Header": {
