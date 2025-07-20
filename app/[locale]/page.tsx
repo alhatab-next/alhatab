@@ -16,9 +16,9 @@ import {
   getKeyValue,
 } from "@heroui/react";
 
-import VoiceWidget from "@/components/ai/VoiceWidget";
-
 import { Lists } from "@/data/Lists";
+
+import AiAgent from "@/components/ai/AiAgent";
 
 export default function Home() {
   const t = useTranslations("Lists");
@@ -28,6 +28,8 @@ export default function Home() {
     { key: "price", label: t("columns.price") },
     { key: "image", label: t("columns.image") },
   ];
+
+  const agentId = process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID;
 
   return (
     <main>
@@ -101,7 +103,9 @@ export default function Home() {
         })}
       </Accordion>
 
-      <VoiceWidget />
+      {/* AI AGENT */}
+      <AiAgent agentId={agentId} />
+      {/* AI AGENT */}
     </main>
   );
 }
