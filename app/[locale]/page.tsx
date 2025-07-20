@@ -16,6 +16,8 @@ import {
   getKeyValue,
 } from "@heroui/react";
 
+import VoiceWidget from "@/components/ai/VoiceWidget";
+
 import { Lists } from "@/data/Lists";
 
 export default function Home() {
@@ -99,7 +101,7 @@ export default function Home() {
         })}
       </Accordion>
 
-      <span></span>
+      <VoiceWidget />
     </main>
   );
 }
