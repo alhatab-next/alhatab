@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 import {
   Accordion,
@@ -28,6 +28,10 @@ export default function Home() {
     { key: "price", label: t("columns.price") },
     { key: "image", label: t("columns.image") },
   ];
+
+  const locale = useLocale();
+
+  const direction = locale === "en" ? "rtl" : "ltr";
 
   const agentId = process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID;
 
@@ -104,7 +108,9 @@ export default function Home() {
       </Accordion>
 
       {/* AI AGENT */}
-      <AiAgent agentId={agentId} />
+      <div dir={direction}>
+        <AiAgent agentId={agentId} />
+      </div>
       {/* AI AGENT */}
     </main>
   );
