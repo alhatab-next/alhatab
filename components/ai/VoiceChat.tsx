@@ -55,8 +55,8 @@ const VoiceChat = () => {
         agentId: process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID!,
         dynamicVariables: {
           agent_name: process.env.NEXT_PUBLIC_AGENT_NAME || "حكيم",
-          business_name: process.env.NEXT_PUBLIC_BUSINESS_NAME || "قصر الكباب",
-        }
+          business_name: process.env.NEXT_PUBLIC_BUSINESS_NAME || "الحطب",
+        },
       });
       console.log("Started conversation:", conversationId);
     } catch (error) {
