@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@plugin '../../hero.ts';
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-rubik: var(--font-rubik);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+
+  @apply min-h-screen bg-gradient-to-t from-yellow-300/5 to-yellow-300/5;
+}
+
+/* Scrollbar Start */
+/* width */
+::-webkit-scrollbar {
+  @apply w-2 rounded-full;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-gradient-to-t from-yellow-500/30 to-yellow-400/30;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-t from-yellow-400 to-yellow-300 hover:from-yellow-400/50 hover:to-yellow-300/50 rounded-full;
+}
+/* Scrollbar End */
+
+::-moz-selection {
+  @apply text-neutral-50 bg-yellow-400;
+}
+
+::selection {
+  @apply text-neutral-50 bg-yellow-400;
+}

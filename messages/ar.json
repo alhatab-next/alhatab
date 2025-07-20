@@ -1,0 +1,96 @@
+{
+  "Metadata": {
+    "title": "Al Hatab",
+    "description": "Al Hatab"
+  },
+
+  "Header": {
+    "chalnge-language": "تغيير اللغة"
+  },
+
+  "Lists": {
+    "columns": { "name": "الإسم", "price": "السعر", "image": "الصورة" },
+
+    "List_1": {
+      "title": "مخبوزات",
+
+      "item_1": {
+        "name": "خبز التنور",
+        "price": "5"
+      },
+      "item_2": {
+        "name": "خبر عربي عادي",
+        "price": "1"
+      },
+      "item_3": {
+        "name": "خبز عربي بر",
+        "price": "2"
+      },
+      "item_4": {
+        "name": "خبز تورتيلا",
+        "price": "4"
+      },
+      "item_5": {
+        "name": "خبز البرجر",
+        "price": "10"
+      },
+      "item_6": {
+        "name": "توست",
+        "price": "4"
+      }
+    },
+    "List_2": {
+      "title": "سلطات",
+
+      "item_1": {
+        "name": "سلطة فتوش",
+        "price": "12"
+      },
+      "item_2": {
+        "name": "سلطة سيزر",
+        "price": "17"
+      },
+      "item_3": {
+        "name": "سلطة جبنة فيتا",
+        "price": "11"
+      }
+    },
+    "List_3": {
+      "title": "البقالة",
+
+      "item_1": {
+        "name": "زيت زيتون الجوف",
+        "price": "14"
+      },
+      "item_2": {
+        "name": "مشروبات غازيه",
+        "price": "2.5"
+      },
+      "item_3": {
+        "name": "عصيرات",
+        "price": "7"
+      },
+      "item_4": {
+        "name": "مويه",
+        "price": "1"
+      }
+    },
+    "List_4": {
+      "title": "الحلويات السعودية",
+
+      "item_1": {
+        "name": "كليجا",
+        "price": "الحبه بريالين - الكرتون ب 20",
+        "description": "فيه 11 حبه"
+      },
+      "item_2": {
+        "name": "بسبوسة",
+        "price": "4"
+      },
+      "item_3": {
+        "name": "حنيني",
+        "price": "7"
+      }
+    }
+  }
+}
